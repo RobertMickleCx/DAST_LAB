@@ -3,11 +3,13 @@ env:
         - authentication:
             method: script
             parameters:
+
                 script: "dast-config/testfire_auth.js"
                 scriptEngine: "ECMAScript : Graal.js"
                 usernameKey: "uid"
                 passwordKey: "passw"
                 loginURL: http://testfire.net/doLogin
+
             verification:
                 loggedInRegex: Sign off
                 loggedOutRegex: Sign In
@@ -47,7 +49,9 @@ jobs:
         type: "authentication"
         engine: "ECMAScript : Graal.js"
         name: "testfire_auth"
+
         file: "dast-config/testfire_auth.js"
+
         target: ""
         inline: ""
       name: "script"
