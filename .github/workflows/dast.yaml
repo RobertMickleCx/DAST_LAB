@@ -19,7 +19,7 @@ jobs:
       - name: Change dir owner
         run: sudo chown -R 1000:1000 ${{ github.workspace }}
       - name: Checkmarx DAST Github Action
-        uses: Checkmarx/dast-github-action@v1.0.6
+        uses: Checkmarx/dast-github-action@v2.1.0
         env:
           CX_APIKEY: ${{ secrets.API_KEY }}
         with:
