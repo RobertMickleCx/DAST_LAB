@@ -21,7 +21,7 @@ jobs:
       - name: Checkmarx DAST Github Action
         uses: Checkmarx/dast-github-action@v1.0.6
         env:
-          CX_APIKEY: eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhODZiNjEzNC0xZGMwLTRjMjktODIyYi0zZDhhYmRjYzg1NTYifQ.eyJpYXQiOjE3MjEyNzQwNDAsImp0aSI6Ijg5MmQxMjcyLWQ1NDQtNDRjYS04OGU2LWE5MjRjZDg2ZTkyMSIsImlzcyI6Imh0dHBzOi8vZGV1LmlhbS5jaGVja21hcngubmV0L2F1dGgvcmVhbG1zL2NoZWNrbWFyeC1nbG9iYWwtc2VydmljZXMtaW50ZXJuYWwiLCJhdWQiOiJodHRwczovL2RldS5pYW0uY2hlY2ttYXJ4Lm5ldC9hdXRoL3JlYWxtcy9jaGVja21hcngtZ2xvYmFsLXNlcnZpY2VzLWludGVybmFsIiwic3ViIjoiYWY1ZTA0YWMtMTMyYi00MzY5LTg4OWYtN2EyNTEyOWViMzM3IiwidHlwIjoiT2ZmbGluZSIsImF6cCI6ImFzdC1hcHAiLCJzZXNzaW9uX3N0YXRlIjoiNDc3MDU0MmEtMzQ4NC00YTUwLWFkMzAtOGFjYzBlZDJjZTVjIiwic2NvcGUiOiJvZmZsaW5lX2FjY2VzcyIsInNpZCI6IjQ3NzA1NDJhLTM0ODQtNGE1MC1hZDMwLThhY2MwZWQyY2U1YyJ9.o4Sc3r7BsuGadKwdZR9xDuBEldiCJzRkyTsfo6CLzHk
+          CX_APIKEY: ${{ API_KEY }}
         with:
           command: web
           config: dast-config/zap_config.yaml
